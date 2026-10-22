@@ -21,9 +21,13 @@ contributors, and maintainers are happy to help.
    on the same branch and the pull request updates itself.
 7. **Point mode only:** [connect the domain on your hosting account](docs/CONNECT-HOST.md)
    before merge and confirm the claim uses the host's recommended DNS target.
-8. A maintainer merges. Instant pages need no more setup. For point mode,
+8. A maintainer merges. Instant pages need no more setup and appear within
+   a few minutes - an "unclaimed" page until then is normal. For point mode,
    follow the [after-merge checklist](docs/CONNECT-HOST.md#after-your-pr-merges):
    wait for DNS sync and your host's HTTPS certificate, then test your address.
+   A browser certificate error in the meantime - on your new address, or on
+   your old `github.io` one, which now redirects to it - is expected. The
+   [post-merge timeline](README.md#after-your-pr-merges) covers every stage.
 
 ### The fine print that keeps things fair
 
@@ -42,6 +46,9 @@ contributors, and maintainers are happy to help.
 - **Docs and translations**: just as welcome as code.
 - **Design**: themes and page templates have their own guide in the renderer
   repo once Phase 2 opens them up.
+- **PR template**: the default template is written for page claims. For
+  project changes, add `&template=improvement.md` to the "Open a pull
+  request" page URL and reload to switch templates.
 
 Please follow the [Code of Conduct](CODE_OF_CONDUCT.md). In short: be warm,
 assume good intent, celebrate beginners.
